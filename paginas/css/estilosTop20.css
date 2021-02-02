@@ -1,72 +1,92 @@
-
 body {
   margin: 0;
-  background-image: url(img);
 }
-
 img {
   display: block;
+  width: 40%;
+  position: absolute;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  width: 250%;
+}
+
+.img__header {
+  width: 40%;
+}
+
+.reproductor {
+  position: absolute;
+  top: 77%;
+  
+}
+
+/* lista de canciones */
+
+.lista_canciones {   
+  position: relative;   
+}
+.contenedor {
+  width: 295%;  
+}
+.pistas {
+  background: rgb(21, 20, 26);
+  color: #fff;
+  padding: 13px;
+  margin-bottom: 30px;
+  width: 32%;
+  height: 200px;
+}
+.lista {
+  color: black;  
   width: 100%;
+}
+h2 {
+  float: left;
+  position: relative;
+
 }
 
 h1 {
-  padding-left: 90px;
-  height: 500px;
+  padding-left: 10px;
+  height: 200px;
   text-align: center;
-  position: absolute;
-  color: rgb(184, 30, 184);
+  position: relative;
+  color: rgb(221, 219, 221);
+  margin-top: 300px;
 }
 
-.fondo {
-    
-    position: relative;
+
+
+
+
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
+@media(min-width:768px) {
+  .contenedor {
+    width: 99%;
     display: flex;
-    align-items: center;
-}
-.info {
-    font-family: arial;
-    border-collapse: collapse;
-    padding: 90px;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    color: rgb(132, 126, 156);
-    height: 100px;    
-}
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  } 
-  .pistas {
-    background: rgb(34, 30, 30);
-    color: #fff;
-    padding: 15px;
-    margin-bottom: 30px;
-    width: 32%;
-    
-  }
-  .lista {
-    color: rgb(22, 24, 20);
-    background-color: rgb(180, 165, 165);
-    width: 105%;
-  }
-  .contenedor {    
-    width: 280%;
-    padding-left: 20px;
-    margin-top: 140px;
-    margin-inline: -100px;    
+    margin-inline: -105px;
   }
 
-  @media(min-width:768px) {
-    .contenedor {
-      width: 99%;
-      display: flex;
-      margin-inline: -105px; 
-    }    
 
-  }
- 
+
+}
