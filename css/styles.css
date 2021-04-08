@@ -18,11 +18,6 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Yanone Kaffeesatz', sans-serif; 
 }
 
-.section__titulo {
-        text-align: center;
-        font-size: 50px;
-        color: white;
-} 
 .contenedor {
     margin: auto;
     width: 99%;
@@ -130,19 +125,19 @@ body {
 .logo,.fa-bars { 
     
     margin: 5px;
-    color: white;
+    color: rgb(196, 192, 147);
      
 } 
 
 .fa-bars { 
     display: block; 
-    width: 40px; 
-    height: 40px; 
-    font-size: 30; 
+    width: 35px; 
+    height: 35px; 
+    font-size: 40; 
     background: grey;     
     text-align:center;
-    line-height: 45px;
-    border-radius: 5px;
+    line-height: 35px;
+    border-radius: 4px;
     margin-left: auto;
     cursor: pointer; 
 } 
@@ -193,42 +188,18 @@ body {
     color: white;
     text-align: center;
   }
+.banner__titulo {
+    color: burlywood;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .banner__txt { 
       display: none;
   }
 table {
     width: 180%;
-}
-  
-  /*-----------------Estilos de info-----------------*/
-.info__columna {
-    background: grey;
-    color: #fff;
-    padding: 15px;
-    margin-bottom: 30px;
-  }
-  /*-----------------Estilos de cursos-----------------*/
-.contacto__columna {    
-      position: relative;
-      margin-bottom: 30px;
-      align-content: center;
-}
-  
-.contacto__description {
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: white;
-      background: rgba(0,0,0,0.5);
-      width: 60%;
-      height: 100%;
-      padding: 5px;
-  }
-.contacto__titulo {
-      font-size: 25px;
-      margin: 5px 0;
-  }
+}  
+ 
 /*-----------------Estilos de footer-----------------*/
 .footer {
     background: #333;
@@ -251,9 +222,14 @@ table {
 /*-----------------Estilos de responsive-----------------*/
 
 @media(min-width:480px) {
-    .logoTop {
-        width: 100px;
+    .banner {
+        margin-left: -10px;
     }
+    .fa-bars {
+        margin-right: 60px;
+        margin-top: 10px;
+    }
+    
     .logo {
         font-size: 50px;
         margin-top: 50px;
@@ -261,65 +237,35 @@ table {
         color: purple;
     }
     .banner__titulo {
-        font-size: 25px;
-        margin: 5px;
-        margin-left: 170px;
+        margin-top: 95px;
+        width: 160%;
+        font-size: 40px;       
 
     }
     .banner__txt {
         display: block;
         font-size: 18px;
         margin: 7px;
-    }
-    .info, .contacto {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -90px;
-    }
-    .info__columna {
-        width: 32%;
-    } 
-    .info__titulo {
-        font-size: 30px;
-        margin: 5px 0;
-    }
-    .section__titulo {
-        width: 100px;      
-    } 
-    .contacto {
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-    .contacto__columna {
-        width: 49%;
-    } 
+    }  
+    
     .footer .social [class^="fab fa-"] {
        margin: 0 10px; 
     } 
 }
 @media(min-width:768px) {
-    .logoTop {
-        width: 150px;
-    }
+    
     .banner__titulo {
         font-size: 50px;        
     }
-    .contacto__titulo {
-        font-size: 40px;
-    }
+    
 }
 
 @media(min-width:1024px) {
-    .logoTop {
-        width: 200px;
-    }
+    
     .contenedor {
         width: 1000px;
     }     
-    .section__titulo {
-        font-size: 50px;
-        margin: 30px 0;
-    }
+    
     .nav {
         position: static;
         width: auto;
@@ -344,23 +290,7 @@ table {
     }
     .banner__txt {
         font-size: 25px;
-    }
-    .info {
-      margin-top: -110;  
-    }
-    .info__titulo {
-        font-size: 40px;
-        text-align: center;        
-    }
-    .contacto__description {
-        padding: 20px;
-    }
-    .contacto__titulo {
-        font-size: 50px;
-    }
-    .contacto__txt {
-        font-size: 20px;
-    }
+    }     
 }
 
 
