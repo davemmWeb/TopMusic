@@ -219,14 +219,78 @@ table {
     height: 50px;
     line-height: 30px;
 }
+/*-------- estilos top ----------------*/
+.top {
+    
+    overflow: auto;
+    margin-top: -20px;
+    padding: 2px;    
+    background-color: rgb(92, 80, 80);
+    width: 100%;
+}
+th {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50, 38, 156);
+   background-color: #bdc8cf; 
+}
+tr {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: burlywood;
+    background-color: #13171a;
+}
+
+/*------------------ Estilos reproductor--------------- */
+.botones {
+    margin-left: 190px;
+    
+}
+.img__song {    
+    border-radius: 50%;
+    
+ 
+
+}
+.contenedorAudio {
+    margin-top: 10px;
+    position: relative;    
+}
+.botones {
+    margin-left: 29px;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 25px;    
+    
+}
+.fa-backward, .fa-play-circle, .fa-forward {
+    
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+.repro {
+    position: relative;
+    margin-top: 300px;
+}
 /*-----------------Estilos de responsive-----------------*/
 
 @media(min-width:480px) {
     .banner {
-        margin-left: -10px;
+        height: 350px;
     }
+    .menu {
+        width: 476px;
+    }
+    
     .fa-bars {
-        margin-right: 60px;
+        margin-right: 10px;
         margin-top: 10px;
     }
     
@@ -238,21 +302,18 @@ table {
     }
     .banner__titulo {
         margin-top: 95px;
-        width: 160%;
-        font-size: 40px;       
-
-    }
-    .banner__txt {
-        display: block;
-        font-size: 18px;
-        margin: 7px;
-    }  
-    
+        width: 180%;
+        font-size: 40px; 
+    }    
     .footer .social [class^="fab fa-"] {
        margin: 0 10px; 
     } 
 }
 @media(min-width:768px) {
+
+    .menu {
+        width: 745px;
+    }
     
     .banner__titulo {
         font-size: 50px;        
