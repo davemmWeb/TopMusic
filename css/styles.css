@@ -25,17 +25,6 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /*----------------Buscador de contenido--------------*/
-
-
-body {
-    background: #343d46;
-}
-
-.box {
-    margin: 5px auto;
-    width: 300px;
-    height: 50px;
-}
 .container-1{
     width: 170px;
     vertical-align: middle;
@@ -202,7 +191,10 @@ table {
  
 /*-----------------Estilos de footer-----------------*/
 .footer {
-    background: #333;
+    margin-top: 196px;
+    position: absolute;
+    width: 100%;
+    background: rgba(150,150,180,0.8);
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -211,77 +203,124 @@ table {
     display: inline-block;
     color:#333;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 18px;
     padding: 10px;
     background: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+    margin: 6 9px;
 }
 /*-------- estilos top ----------------*/
 .top {
-    
+    position: absolute;
     overflow: auto;
-    margin-top: -20px;
+    margin-top: 100%;
     padding: 2px;    
-    background-color: rgb(92, 80, 80);
+    background-color: grey;
     width: 100%;
 }
+.posicion__top {
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:rgb(158, 152, 170);
+}
+.titulo__top {
+    text-align: center;
+    background: grey;
+    color: rgb(50, 38, 156) ;
+    margin-top: -20px;
+    padding: 1%;
+}
+
 th {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(50, 38, 156);
-   background-color: #bdc8cf; 
+    background-color: #bdc8cf; 
+    
 }
 tr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: burlywood;
-    background-color: #13171a;
+    color: rgb(15, 14, 13);
+    background-color: rgb(76, 71, 71);
+    
 }
 
 /*------------------ Estilos reproductor--------------- */
-.botones {
-    margin-left: 190px;
-    
-}
-.img__song {    
-    border-radius: 50%;
-    
- 
-
-}
-.contenedorAudio {
-    margin-top: 10px;
-    position: relative;    
-}
-.botones {
-    margin-left: 29px;
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
+.titulo {
     position: relative;
-    align-items: center;
-    margin-top: 28px;
-    margin-bottom: 25px;    
-    
-}
-.fa-backward, .fa-play-circle, .fa-forward {
-    
-    text-align: center;
-    line-height: 30px;
-    width: 30px;
+    width: 40%;
     height: 30px;
-    border-radius: 15px;
-    background-color: antiquewhite;
+    margin-top: 30px;
+    background-color: rgba(190,190,190,0.5);
+    margin-left: auto;
+    margin-right: auto;    
 }
-.repro {
+.title-repro {
+    color: rgb(27, 19, 22); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;      
+    
+}
+.reproductor {
+    
+    height: 80%;
+    position: absolute;
+    background: url('../img/musicaTres.jpg');
+    text-align: center;
+    width: 100%;
+    
+}
+.img-repro {  
+    margin-top: 70px;
     position: relative;
-    margin-top: 300px;
+    margin-left: auto;  
+    margin-right: auto;
+    border-radius: 90px ;    
+    width: 180px;
+    height: 180px;    
+}
+.audio {
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botones {    
+    position: absolute;
+    margin-top: 40px;    
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    width: 400px;    
+      
+}
+.botones [class^="fas"] {    
+    margin: 0 40px;
+}
+.fa-backward, .fa-play, .fa-forward {
+    text-decoration: none;    
+    text-align: center;
+    line-height: 50px;
+    width:50px;
+    height: 50px;
+    background-color: rgba(180,180,180,0.8);
+    border-radius: 80px;
+    color: rgb(21, 17, 24);    
+}
+.conten__songs{
+    position: relative;
+    width: 100%;
+    margin-top: -60px;
 }
 /*-----------------Estilos de responsive-----------------*/
 
 @media(min-width:480px) {
+    .contenedor {
+        width: auto;
+    }
     .banner {
         height: 350px;
     }

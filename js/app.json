@@ -1,0 +1,11 @@
+{
+    "songs": [
+        {
+            "id" : 0,
+            "nombre": "californication",
+            "arrtist": "red hot chili peppers",
+            "song" : "musica/Red Hot Chili Peppers - Otherside",
+            "image" : "img/Red Hot Chili Peppers"
+        }
+    ]
+}
