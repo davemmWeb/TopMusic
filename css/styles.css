@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz&display=swap'); 
 
+
 * {
     box-sizing: border-box; 
 }
@@ -202,22 +203,26 @@ table {
  
 /*-----------------Estilos de footer-----------------*/
 .footer {
+    position: absolute;
+    margin-top: 500px;
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
+    height: 80px;
 }
 .footer .social [class^="fab fa-"] {
     display: inline-block;
     color:#333;
     text-decoration: none;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 10px;    
     background: white;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
 }
 /*-------- estilos top ----------------*/
 .top {
@@ -241,43 +246,58 @@ tr {
 }
 
 /*------------------ Estilos reproductor--------------- */
-.botones {
-    margin-left: 190px;
-    
-}
-.img__song {    
-    border-radius: 50%;
-    
  
-
+.audio{
+    margin-top: -30px;    
+    position: absolute;
+    height: 100%;
+    background-color:rgb(0, 0, 1.7, 0.7);
 }
-.contenedorAudio {
-    margin-top: 10px;
-    position: relative;    
-}
-.botones {
-    margin-left: 29px;
+.botones {  
+    
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 80%;
     justify-content: space-evenly;
     position: relative;
     align-items: center;
-    margin-top: 28px;
+    margin-top: 30px;
     margin-bottom: 25px;    
     
 }
 .fa-backward, .fa-play-circle, .fa-forward {
-    
-    text-align: center;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: antiquewhite;
+    line-height: 150%;
+    font-size: 25px;
+    text-align: center;       
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    
+    border-radius: 20px;
+    background-color:rgb(92, 90, 90);
+}
+.img__repro{
+    position: relative;
+}
+.img__repro img {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 50%;
+    border-radius: 50%;
 }
 .repro {
     position: relative;
-    margin-top: 300px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.lista__repro{
+    position: relative;
+    width: 100%;
+    margin-top: -120px;
 }
 /*-----------------Estilos de responsive-----------------*/
 
