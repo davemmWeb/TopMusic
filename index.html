@@ -7,103 +7,105 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="https://kit.fontawesome.com/b05abdffcf.js" crossorigin="anonymous"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 
 
     <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
 </head>
 
 <body>
-    <!---Este es el header donde esta el top-->
+    <!-------------------------Este es el header ------------------------>
 
     <header class="header">
-        <div class="contenedor">
+        <div class="header__contenedor">
             <span class="fas fa-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
-                    <li class="menu__item"><a class="menu__link select" href="/index.html">Inic</a></li>
+                    <li class="menu__item"><a class="menu__link select" href="/index.html">Inicio</a></li>
                     <li class="menu__item"><a class="menu__link" href="">My list</a></li>
                     <li class="menu__item"><a class="menu__link" href="/top.html">Top 20</a></li>
                     <li class="menu__item"><a class="menu__link" href="">Iniciar Sesion</a></li>
-
-                    <!-- Este div es del buscador que esta metido en el mismo header-->
-                    <div class="container-1">
-                        <input type="search" id="search" placeholder="Search..." />
-                        <button class="icon"><i class="fa fa-search"></i></button>
-                    </div>
                 </ul>
+                <!-- Este div es del buscador que esta metido en el mismo header-->
+                <div class="container-1">
+                    <input type="search" id="search" placeholder="Search..." />
+                    <button class="icon"><i class="fa fa-search"></i></button>
+                </div>
             </nav>
         </div>
+
     </header>
 
     <!------------------ Este es el banner --------------->
 
-    <div class="contenedor">
-        <div class="banner">
-            <img src="img/banner.jpg" alt="" class="banner">
-            <div class="contenedor">
-                <h2 class="banner__titulo">Crea tus propias listas</h2>
+    <div class="banner">
+        <!--- Reproductor -->
+
+        <div class="contenedor__repro">
+            <div class="contenedor__img">
+                <img class="img__repro" src="img/musicaTres.jpg" alt="">
+            </div>
+            <div class="audio">
+                <audio src="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3" controls=""></audio>
+            </div>
+            <div class="botones">
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-forward"></i>
+            </div>
+            <div class="conten__songs">
+                <table class="songs">
+                    <tr>
+                        <th scope="row">#</th>
+                        <th>Artista</th>
+                        <th>Cancion</th>
+                        <th>Genero</th>
+                        <th>Votaciones</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Linkin Park</td>
+                        <td>Paper Cut</td>
+                        <td>Rock</td>
+                        <td>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </td>
+                    </tr>
             </div>
         </div>
-    </div>
-    <!---------------------- Reproductor ------------------>
 
-    <div class="reproductor">
         <div class="titulo">
-            <i class="title-repro">Reproduciendo...</i>
+            <h2>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. At nam modi numquam voluptate
+                sunt perspiciatis error amet aliquid vero dolore
+                pariatur facilis odit, deserunt alias libero ratione
+                quisquam vel sed.</h2>
+    
         </div>
-        <div class="contenedor-img">
-            <img class="img-repro" src="img/musicaTres.jpg" alt="">
-        </div>
-        <div class="audio">
-            <audio src="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3" controls=""></audio>
-        </div>
-        <div class="botones">
-            <i class="fas fa-backward"></i>
-            <i class="fas fa-play"></i>
-            <i class="fas fa-forward"></i>
-        </div>
+    </div>    
 
-        <div class="conten__songs">
-            <table class="songs">
-                <tr>
-                    <th scope="row">#</th>
-                    <th>Artista</th>
-                    <th>Cancion</th>
-                    <th>Genero</th>
-                    <th>Votaciones</th>
-                </tr>
-                <tr>
-                    <td class="posicion__top">1</td>
-                    <td>Linkin Park</td>
-                    <td>Paper Cut</td>
-                    <td>Rock</td>
-                    <td>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </td>
-                </tr>
-        </div>
-    </div>
     <!----------------- Footer redes sociales ----------------------->
 
-    <footer class="footer">
-        <div class="social">
-            <a href="" class="fab fa-facebook"></a>
-            <a href="" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-google-plus-g"></a>
-            <a href="" class="fab fa-vine"></a>
-        </div>
-        <p class="copy">&copy; Top Music 2021 - Todos los derechos reservados </p>
+    <div class="contenedor__footer">
+        <footer class="footer">
+            <div class="social">
+                <a href="" class="fab fa-facebook"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-google-plus-g"></a>
+                <a href="" class="fab fa-vine"></a>
+            </div>
+            <p class="copy">&copy; Top Music 2021 - Todos los derechos reservados </p>
 
-    </footer>
+        </footer>
+    </div>
 
-    <script src="js/bootstrap.min.js"></script>
+
+
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
 
