@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz&display=swap'); 
 
+
 * {
     box-sizing: border-box; 
 }
@@ -191,26 +192,26 @@ table {
  
 /*-----------------Estilos de footer-----------------*/
 .footer {
-    margin-top: 196px;
     position: absolute;
+    margin-top: 500px;
     width: 100%;
-    background: rgba(150,150,180,0.8);
+    background: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
+    height: 80px;
 }
 .footer .social [class^="fab fa-"] {
     display: inline-block;
     color:#333;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 10px;    
     background: white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     line-height: 10px;
-    margin: 6 9px;
 }
 /*-------- estilos top ----------------*/
 .top {
@@ -250,52 +251,47 @@ tr {
 }
 
 /*------------------ Estilos reproductor--------------- */
-.titulo {
-    position: relative;
-    width: 40%;
-    height: 30px;
-    margin-top: 30px;
-    background-color: rgba(190,190,190,0.5);
-    margin-left: auto;
-    margin-right: auto;    
-}
-.title-repro {
-    color: rgb(27, 19, 22); 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;      
-    
-}
-.reproductor {
-    
-    height: 80%;
+ 
+.audio{
+    margin-top: -30px;    
     position: absolute;
-    background: url('../img/musicaTres.jpg');
-    text-align: center;
-    width: 100%;
+    height: 100%;
+    background-color:rgb(0, 0, 1.7, 0.7);
+}
+.botones {  
+    
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 25px;    
     
 }
-.img-repro {  
-    margin-top: 70px;
-    position: relative;
-    margin-left: auto;  
-    margin-right: auto;
-    border-radius: 90px ;    
-    width: 180px;
-    height: 180px;    
+.fa-backward, .fa-play-circle, .fa-forward {
+    line-height: 150%;
+    font-size: 25px;
+    text-align: center;       
+    width: 40px;
+    height: 40px;
+    cursor: pointer;    
+    border-radius: 20px;
+    background-color:rgb(92, 90, 90);
 }
-.audio {
+.img__repro{
     position: relative;
+}
+.img__repro img {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-}
-.botones {    
-    position: absolute;
-    margin-top: 40px;    
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 30px;
-    width: 400px;    
-      
+    height: 200px;
+    width: 50%;
+    border-radius: 50%;
 }
 .botones [class^="fas"] {    
     margin: 0 40px;
@@ -312,8 +308,14 @@ tr {
 }
 .conten__songs{
     position: relative;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.lista__repro{
+    position: relative;
     width: 100%;
-    margin-top: -60px;
+    margin-top: -120px;
 }
 /*-----------------Estilos de responsive-----------------*/
 
