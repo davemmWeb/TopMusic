@@ -3,231 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Top 20</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/top.css">
+    <title>Top Music</title>
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b05abdffcf.js" crossorigin="anonymous"></script>
-
-
-    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/top.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!---Este es el header donde esta el top-->
 
-    <header class="header">
-        <div class="contenedor">
-            <span class="fas fa-bars" id="btn-menu"></span>
-            <nav class="nav" id="nav">
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="/index.html">Inicio</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">My list</a></li>
-                    <li class="menu__item"><a class="menu__link select" href="/top.html">Top 20</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Iniciar Sesion</a></li>
-
+    <div class="container img_fondo">
+        <div class="row">
+            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+            <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 buscador">
                     <!-- Este div es del buscador que esta metido en el mismo header-->
                     <div class="container-1">
                         <input type="search" id="search" placeholder="Search..." />
                         <button class="icon"><i class="fa fa-search"></i></button>
                     </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Imagen</th>
+                            <th>Artist</th>
+                            <th>Song</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Linkin Park</td>
+                            <td>Paper Cut</td>
+                            <td>Rock</td>
 
-    <!------------------ Este es el banner --------------->
+                        </tr>
+                    </table>
 
-    <div class="contenedor">
-        <div class="banner">
-            <img src="img/banner.jpg" alt="" class="banner">
-            <div class="contenedor">
-                <h2 class="banner__titulo">Crea tus propias listas</h2>
+
+                </div>
+
+                <div class="col-sm-4 repro">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, iure!</h2>
+                </div>
+
             </div>
         </div>
     </div>
-    <!---------------------- Reproductor ------------------>
-
-    <!-- <div class="reproductor">
-        <div class="titulo">
-            <i class="title-repro">Reproduciendo...</i>
-        </div>
-        <div class="contenedor-img">
-            <img class="img-repro" src="img/musicaTres.jpg" alt="">
-        </div>
-        <div class="audio">
-            <audio src="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3" controls=""></audio>
-        </div>
-        <div class="botones">
-            <i class="fas fa-backward"></i>
-            <i class="fas fa-play"></i>
-            <i class="fas fa-forward"></i>
-        </div>
-    </div> -->
-
-    <!-------------------- Top  10 -------------------->
-
-    
-    <table class="top">
-        <tr>
-            <th scope="row">#</th>
-            <th>Artista</th>
-            <th>Cancion</th>
-            <th>Genero</th>
-            <th>Votaciones</th>
-        </tr>
-        <tr>
-            <td class="posicion__top">1</td>
-            <td>Linkin Park</td>
-            <td>Paper Cut</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">2</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">3</td>
-            <td>Emminem</td>
-            <td>Lose your self</td>
-            <td>Hip Hop</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">4</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">5</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">6</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">7</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">8</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">9</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-        <tr>
-            <td class="posicion__top">10</td>
-            <td>Hoobastank</td>
-            <td>Crawiling in the dark</td>
-            <td>Rock</td>
-            <td>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="fas fa-star"></i>
-            </td>
-        </tr>
-
-    </table>
 
 
 
-    <!----------------- Footer redes sociales ----------------------->
-
-    <footer class="footer">
-        <div class="social">
-            <a href="" class="fab fa-facebook"></a>
-            <a href="" class="fab fa-twitter"></a>
-            <a href="" class="fab fa-google-plus-g"></a>
-            <a href="" class="fab fa-vine"></a>
-        </div>
-        <p class="copy">&copy; Top Music 2021 - Todos los derechos reservados </p>
-
-    </footer>
-
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 
 </body>
 

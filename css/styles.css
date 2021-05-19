@@ -167,15 +167,10 @@ h1,h2,h3,h4,h5,h6 {
 } 
 
 /*-----------------Estilos de banner-----------------*/
+
 .banner {    
-    background: url("/img/banner.jpg");
-    background-size: 100%;
-    background-color: black;
-    width: 1200px; 
-    height: 850px; 
-    margin: 80px;
-    margin-top: 0;
-       
+    background: url("/img/banner.jpg");            
+          
 }
 
 
@@ -187,8 +182,8 @@ h1,h2,h3,h4,h5,h6 {
     height: 600px;
     width: 400px;
     position: absolute;
-    margin-top: 300px;
-    margin-left: 100px;    
+    margin-top: 600px;
+    margin: 140px;    
 }
 .img__repro {    
     margin-top: 40px;
